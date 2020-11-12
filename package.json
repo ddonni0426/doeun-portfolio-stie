@@ -1,0 +1,29 @@
+{
+  "name": "kimdoeun-page",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "serve": "nuxt",
+    "deploy": "push-dir --dir=dist --branch=master --cleanup"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.14.0",
+    "chart.js": "^2.9.3",
+    "lodash.throttle": "^4.1.1",
+    "nuxt": "^2.14.0",
+    "nuxt-fontawesome": "^0.4.0",
+    "nuxt-mq": "^2.0.1",
+    "vue-mindmap": "0.0.4",
+    "vue-owl-carousel": "^2.0.3",
+    "vuetify": "^2.3.10"
+  },
+  "devDependencies": {
+    "node-sass": "^4.14.1",
+    "push-dir": "^0.4.1",
+    "sass-loader": "^9.0.3"
+  }
+}

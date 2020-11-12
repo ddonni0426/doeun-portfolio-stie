@@ -1,0 +1,132 @@
+@charset 'utf-8';
+
+/*타이핑 효과*/
+.typewriter p {
+  border-right: 0.15em solid orange;
+  white-space: nowrap;
+  overflow: hidden;
+  color: black;
+  &.desc1 {
+    width: 6em;
+    animation: type 3s steps(30, end);
+    animation-fill-mode: forwards;
+    -webkit-animation: type 3s steps(30, end);
+    -webkit-animation-fill-mode: forwards;
+  }
+  &.desc2 {
+    width: 6em;
+    opacity: 0;
+    animation: type2 3s steps(30, end);
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+    -webkit-animation: type2 3s steps(30, end);
+    -webkit-animation-delay: 3s;
+    -webkit-animation-fill-mode: forwards;
+  }
+  /* animation의 blink는 깜빡거리는 효과*/
+  &.desc3 {
+    width: 6em;
+    opacity: 0;
+    animation: type3 3s steps(40, end), blink 0.5s step-end infinite alternate;
+    animation-delay: 6s;
+    animation-fill-mode: forwards;
+    -webkit-animation: type3 3s steps(40, end),
+      blink 0.5s step-end infinite alternate;
+    -webkit-animation-delay: 6s;
+    -webkit-animation-fill-mode: forwards;
+  }
+}
+
+@keyframes type {
+  0% {
+    width: 0;
+  }
+  99.9% {
+    border-right: 0.15em solid orange;
+  }
+  100% {
+    border: none;
+  }
+}
+
+@-webkit-keyframes type {
+  0% {
+    width: 0;
+  }
+  99.9% {
+    border-right: 0.15em solid orange;
+  }
+  100% {
+    border: none;
+  }
+}
+
+@keyframes type2 {
+  0% {
+    width: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  99.9% {
+    border-right: 0.15em solid orange;
+  }
+  100% {
+    opacity: 1;
+    border: none;
+  }
+}
+
+@-webkit-keyframes type2 {
+  0% {
+    width: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  99.9% {
+    border-right: 0.15em solid orange;
+  }
+  100% {
+    opacity: 1;
+    border: none;
+  }
+}
+
+@keyframes type3 {
+  0% {
+    width: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes type3 {
+  0% {
+    width: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+@-webkit-keyframes blink {
+  50% {
+    border-color: tranparent;
+  }
+}
+/*타이핑 효과 끝*/
+
+/*scene-title 애니*/

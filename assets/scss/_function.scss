@@ -1,0 +1,64 @@
+@charset 'utf-8';
+
+@mixin setGridArea($col_start, $col_span_end, $row_start, $row_span_end) {
+  grid-column: $col_start / span $col_span_end;
+  grid-row: $row_start / span $row_span_end;
+}
+@mixin setGrid($display, $col, $col_fr, $rows, $rows_fr, $gap) {
+  display: $display;
+  grid-template-columns: repeat($col, $col_fr);
+  grid-template-rows: repeat($rows, $rows_fr);
+  grid-gap: $gap;
+}
+@mixin setFlex($display, $jus, $align) {
+  display: $display;
+  justify-content: $jus;
+  align-items: $align;
+}
+
+@mixin setPosition($pos, $top, $right, $left, $bottom, $zIdx) {
+  position: $pos;
+  top: $top;
+  right: $right;
+  left: $left;
+  bottom: $bottom;
+  z-index: $zIdx;
+}
+
+.underLine {
+  h3 {
+    position: relative;
+    z-index: 1;
+    display: inline;
+    span {
+      @include setPosition(absolute, 60%, null, 0, null, -10);
+      display: inline-block;
+      width: 104%;
+      height: 10px;
+      background: gold;
+      opacity: 0.7;
+    }
+  }
+}
+
+.gitLink{
+  position: absolute;
+  left: 0;
+  right: 0;
+  text-align: center;
+  bottom: 10px;
+  text-decoration-line: underline;
+  font-size: calc(2rem-5px);
+  font-family: "malgun gothic";
+  
+}
+.carouselImg{
+  max-width: 100%;
+  max-height: 700px;
+  overflow: hidden;
+}
+.resGrid {
+  grid-column: auto;
+  grid-row: auto;
+  text-align: center;
+}
