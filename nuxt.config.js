@@ -1,6 +1,6 @@
 export default {
   mode: "spa",
- target: "static",
+  target: "serve",
   head: {
     title: process.env.npm_package_name || "",
     meta: [
