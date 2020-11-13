@@ -1,6 +1,6 @@
 export default {
   mode: "spa",
-  target: "serve",
+  target: "server",
   head: {
     title: process.env.npm_package_name || "",
     meta: [
@@ -47,5 +47,5 @@ export default {
       pc: Infinity
     }
   },
-  build: {}
+  build: {},
 };
