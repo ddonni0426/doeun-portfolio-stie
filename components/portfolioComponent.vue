@@ -62,7 +62,7 @@ export default {
       max-height: 100%;
       a{
         color: wheat;
-        font-size: 1.5rem;
+        font-size: 16px;
       }
     }
   }
