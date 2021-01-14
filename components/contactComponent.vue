@@ -3,7 +3,7 @@
     <div class="scene-title d">
       <h2>#Contact.</h2>
     </div>
-    <ul class="accordion">
+    <ul class="accordion" :class="$mq">
       <li class="contactInfo katalkId">
         <div class="front turnElem">KakaoTalk</div>        
         <a href="#contact" class="back turnElem" @click="copyInfo">ddonni93</a>
@@ -15,9 +15,9 @@
         <div class="front turnElem">Phone Number</div>
         <a href="#contact" class="back turnElem"  @click="copyInfo">01044538932</a></li>
       <li class="contactInfo github">
-        <div class="front turnElem">Github</div>
-        <a href="https://github.com/ddonni0426" class="back turnElem" target="_blank">github 방문하기</a></li>
-      <div class="popup hidden">
+        <div class="front turnElem">Blog</div>
+        <a href="https://voltnuna.tistory.com/" class="back turnElem" target="_blank">Blog 방문하기</a></li>
+      <div class="popup hidden" :class="$mq">
         <span>연락처 복사 완료!</span>
       </div>
     </ul>
@@ -60,11 +60,17 @@ section.scene4 {
     padding-bottom: 6.5rem;
   }
   ul.accordion{
+    
     position: relative;
     @include setFlex(flex, space-evenly, center);
     flex-wrap: nowrap;
     width: 100%;
     height: 250px;
+    &.mobile{
+      @include setFlex(flex, space-evenly, center);
+      flex-direction: column;
+      gap: 5px;
+    }
     li{
       &.katalkId > div{
        background: #e8ac34;
@@ -128,6 +134,9 @@ section.scene4 {
     color: #fff;
     &.hidden{
       opacity: 0;
+    }
+    &.mobile{
+      @include setPosition(absolute, -60px, null, null, null, null);
     }
   }
 }

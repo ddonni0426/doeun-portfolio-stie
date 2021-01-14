@@ -60,6 +60,10 @@ export default {
     div {
       width: 100%;
       max-height: 100%;
+      a{
+        color: wheat;
+        font-size: 1.5rem;
+      }
     }
   }
 }

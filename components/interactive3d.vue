@@ -3,7 +3,7 @@
 <div class="Image-item">
       <img class="space3d" src="@/assets/image/portfolio.gif" alt="인터렉티브 웹 메인화면" />
       <div class="link-item">
-        <a href="https://github.com/ddonni0426/bangagan-clone" target="_blank"> 인터렉티브 공간 소스보러가기</a>
+        <!-- <a href="https://github.com/ddonni0426/bangagan-clone" target="_blank"> 인터렉티브 공간 소스보러가기</a> -->
       </div>
     </div>
 </div>
