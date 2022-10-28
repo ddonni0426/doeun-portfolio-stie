@@ -134,7 +134,7 @@
         </div>
         <div class="resume-elem contact coverletter coverletter2" :class="$mq">
           <div>
-            <h3>Conclusion__</h3>
+            <h3>Passion__</h3>
             <p>
               - 반복을 줄이는 능력을 기르기 위해 활용할 수 있는 커스텀 Hook 들을
               찾아보고, UI 라이브러리 사이트를 참고하여 반복되는 스타일들을
