@@ -3,8 +3,8 @@
     <div class="main-video-wrap">
       <div class="typewriter">
         <p class="desc1">Front-end</p>
-        <p class="desc2">Portfolio</p>
-        <p class="desc3">Kim :Doeun.</p>
+        <p class="desc2">Kim :Doeun</p>
+        <p class="desc3">Resume.</p>
       </div>
       <video autoplay muted loop src="~/assets/video/Meeting.mp4"></video>
     </div>

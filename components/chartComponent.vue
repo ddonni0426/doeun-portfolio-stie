@@ -21,24 +21,24 @@
       <span>{{ score["js"] }}%</span>
     </li>
     <li>
-      <span>Vue.js</span>
-      <span class="bar" :score="score['vue']"></span>
-      <span>{{ score["vue"] }}%</span>
+      <span>React.js</span>
+      <span class="bar" :score="score['react']"></span>
+      <span>{{ score["react"] }}%</span>
     </li>
     <li>
-      <span>Nuxt.js</span>
-      <span class="bar" :score="score['nuxt']"></span>
-      <span>{{ score["nuxt"] }}%</span>
+      <span>Git</span>
+      <span class="bar" :score="score['git']"></span>
+      <span>{{ score["git"] }}%</span>
     </li>
     <li>
-      <span>python</span>
-      <span class="bar" :score="score['python']"></span>
-      <span>{{ score["python"] }}%</span>
+      <span>SourceTree</span>
+      <span class="bar" :score="score['sourceTree']"></span>
+      <span>{{ score["sourceTree"] }}%</span>
     </li>
     <li>
-      <span>Webpack</span>
-      <span class="bar" :score="score['webpack']"></span>
-      <span>{{ score["webpack"] }}%</span>
+      <span>CS</span>
+      <span class="bar" :score="score['computerScience']"></span>
+      <span>{{ score["computerScience"] }}%</span>
     </li>
   </ul>
 </template>
@@ -50,16 +50,16 @@ export default {
       score: {
         html: 70,
         css: 70,
-        scss: 60,
+        scss: 65,
         js: 65,
-        vue: 50,
-        python: 50,
-        nuxt: 65,
-        webpack: 45
-      }
+        react: 60,
+        git: 60,
+        sourceTree: 55,
+        computerScience: 70,
+      },
     };
   },
-  mounted() {}
+  mounted() {},
 };
 </script>
 
@@ -86,7 +86,7 @@ ul.skillCharts {
         height: 10px;
         margin-right: 7px;
         display: inline-block;
-        background: linear-gradient(to right, #ECD6B7, #C95625);
+        background: linear-gradient(to right, #ecd6b7, #c95625);
         border-radius: 50px;
         transition: 0.55s;
       }

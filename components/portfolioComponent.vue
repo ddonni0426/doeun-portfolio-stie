@@ -1,7 +1,7 @@
 <template>
   <section class="sub-scene scene3">
     <div class="scene-title c">
-      <h2>#Portfolio.</h2>
+      <h2>#Side Projects.</h2>
     </div>
     <carousel
       class="carousel"
@@ -29,7 +29,7 @@ import DayCatcher from "./daycatcher.vue";
 import BangaClon from "./bangaClon.vue";
 import InterActive from "./interactive3d.vue";
 export default {
-  components: { carousel, DayCatcher, BangaClon , InterActive},
+  components: { carousel, DayCatcher, BangaClon, InterActive },
   data() {
     return {
       settings: {
@@ -60,7 +60,7 @@ export default {
     div {
       width: 100%;
       max-height: 100%;
-      a{
+      a {
         color: wheat;
         font-size: 16px;
       }

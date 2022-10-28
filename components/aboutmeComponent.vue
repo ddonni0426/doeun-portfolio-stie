@@ -1,14 +1,15 @@
 <template>
   <section class="sub-scene scene2">
     <div class="scene-title b">
-      <h2>#About Me.</h2>
+      <h2>#Resume.</h2>
     </div>
     <span class="rsWrapper">
       <!-- resume-form 들어갈 자리 -->
       <article class="resume-form" :class="$mq">
         <div class="resume-elem pic" :class="$mq">
-          <img src="../assets/image/doeun-character.png" alt="김도은 사진" />
+          <img src="../assets/image/zepeto-2.jpg" alt="김도은 사진" />
         </div>
+
         <div class="resume-elem pos" :class="$mq">
           <!-- 아래에서 위로 등장하게 -->
           <ul>
@@ -23,6 +24,50 @@
             </li>
           </ul>
         </div>
+        <div class="resume-elem projects" :class="$mq">
+          <h3>
+            Projects ___
+            <span></span>
+          </h3>
+          <ul class="projectList">
+            <li>
+              AI 분석 가시화 UI개발 외주
+              <small> ( 1주일 )</small>
+            </li>
+            <li>
+              SK가스 CMS 리뉴얼
+              <small> ( 약 6개월 )</small>
+            </li>
+            <li>
+              SK가스 Small Bulk 기능 개선
+              <small> ( 약 10일 )</small>
+            </li>
+            <li>
+              삼성화재 라이브 상담톡 구축
+              <small> ( 3개월 )</small>
+            </li>
+            <li>
+              중앙선거관리 위원회 구축
+              <small> ( 1개월 )</small>
+            </li>
+            <li>
+              Visang MasterK 리뉴얼
+              <small> ( 1개월 이내 )</small>
+            </li>
+            <li>
+              SKConnect+ 구축
+              <small> ( 5개월 이내 )</small>
+            </li>
+            <li>
+              한경대 입학처 UI 리뉴얼
+              <small> ( 1개월 )</small>
+            </li>
+            <li>
+              LG Web 사보
+              <small> ( 1주 이내 )</small>
+            </li>
+          </ul>
+        </div>
         <div class="resume-elem myinfo" :class="$mq">
           <h3>
             Hi, My name is ___
@@ -30,15 +75,16 @@
           </h3>
           <ul class="info">
             <li>김 도은</li>
-            <li>만 27세 (93년생)</li>
-            <li>동명대학교 컴퓨터공학과 2017년도 졸업 ( 3.7 / 4.5 )</li>
-            <li>울산광역시 거주</li>
-            <li>희망 근무지 - 서울, 경기 전지역</li>
+            <li>만 29세 (93년생)</li>
+            <li>경기도 군포시 거주</li>
+            <li>유컴패니온 21.02.08 - 21.10.29 근무</li>
+            <li>티지소프트 22.02.08 - 22.07.15 근무</li>
+            <li>총 1년 3개월 경력</li>
           </ul>
         </div>
         <div class="resume-elem education" :class="$mq">
           <h3>
-            Education ___
+            Interest ___
             <span></span>
           </h3>
           <ul class="inflearn">
@@ -48,42 +94,24 @@
             <li>Javscript Es6+ 제대로 알아보기</li>
             <li>Vue.js로 Nodebird SNS 만들기</li>
             <li>프론트엔드 개발자를 위한 웹팩</li>
-            <li>공공 데이터를 이용한 빅데이터 분석</li>
+            <li>Udemy React-query</li>
+            <li>생활코딩 P5.js</li>
           </ul>
         </div>
-        <div class="resume-elem projects" :class="$mq">
-          <h3>
-            Projects ___
-            <span></span>
-          </h3>
-          <ul class="projectList">
-            <li>
-              Daycatcher
-              <small>개발 소요기간 약 3주</small>
-            </li>
-            <li>
-              Bangagan clone coding
-              <small>개발 소요기간 약 10일</small>
-            </li>
-            <li>
-              Portfolio site
-              <small>개발 소요기간 2주</small>
-            </li>
-            <li>
-              Interactive 공간 사이트
-              <small>개발 소요기간 1주 이내</small>
-            </li>
-          </ul>
-        </div>
-        <div class="resume-elem coverletter" :class="$mq">
+        <div class="resume-elem coverletter coverletter1" :class="$mq">
           <div>
-            <h3>Cover Letter.</h3>
-              <p>안녕하십니까, 프론트엔드 개발 직무에 지원하는 김도은 입니다.</p>
-           <p>  제가 프론트엔드 개발 직무를 선택한 이유는, 눈으로 작업물의 변화를 확인할 수 있다는 부분이 즐거웠기 때문입니다. </p> 
-           <p> 개인 프로젝트를 만들면서 CSS 작업과 자바스크립트로 이벤트를 구현하는 작업은 화면을 통해 결과를 확인하고, 의도대로 작동하는지 테스트를 진행한 뒤 수정하는 과정을 반복하며 진행했습니다. </p>
-         <p>  이런 과정을 통해 프로젝트와 상호 작용한다는 느낌이 들었고, 텅 비어있던 화면이 하나둘씩 채워지는 걸 보면서 느꼈던 보람은 제가 프로젝트를 끝까지 완수할 수 있게 해준 원동력이 되었습니다. </p>
-          <p> 또한, 프레임워크를 사용하여 각각의 영역을 컴포넌트로 작성하고 조합해 가는 과정과 Vuex 스토어를 통해 데이터를 일관성 있게 관리하는 과정도 프로젝트를 체계적으로 만들어간다는 느낌이 들어 즐거웠습니다. </p>
-          <p> 제가 흥미를 느끼는 부분과 컴퓨터공학과에서 배운 지식을 함께 살릴 수 있는 직무가 UI 개발이라고 생각합니다. 제가 가진 특성을 잘 다듬어서 단순히 화면에 표현되기만 하는 코드가 아닌, 더 좋은 코드를 작성할 수 있는 프론트 개발자가 되기 위해 항상 성장하는 개발자가 되겠습니다.</p>
+            <h3>It's my goal to__</h3>
+            <p>
+              사용자가 마우스와 키보드를 움직일 때마다 기대감을 느끼게 하는 웹을
+              만들고 싶습니다.프론트엔드 개발자로 일하면서 기분이 좋았던 순간은
+              작업물을 리뷰할 때 인터렉션을 보고 '오~' 와 같은 감탄사를 뱉어주실
+              때였던 것 같습니다.
+            </p>
+            <p>
+              인터렉션이나 UI 리소스가 많을수록 웹 사이트의 속도가 느려지기
+              쉬운데, 저는 사용자의 감탄사와 기대감이 끊기지 않도록 꾸준히
+              연구하고 시도하는 개발자가 되겠습니다.
+            </p>
           </div>
         </div>
         <div class="resume-elem skills" :class="$mq">
@@ -92,6 +120,35 @@
             <span></span>
           </h3>
           <skill-chart></skill-chart>
+        </div>
+        <div class="resume-elem keywords" :class="$mq">
+          <h3>Keywords__ <span></span></h3>
+          <ul class="badges">
+            <li>#프론트엔드</li>
+            <li>#웹</li>
+            <li>#개발자</li>
+            <li>#인터렉션</li>
+            <li>#재미있는 웹</li>
+            <li>#살아있는 웹</li>
+          </ul>
+        </div>
+        <div class="resume-elem contact coverletter coverletter2" :class="$mq">
+          <div>
+            <h3>Conclusion__</h3>
+            <p>
+              - 반복을 줄이는 능력을 기르기 위해 활용할 수 있는 커스텀 Hook 들을
+              찾아보고, UI 라이브러리 사이트를 참고하여 반복되는 스타일들을
+              어떻게 공통 클래스 네임으로 묶을 수 있을지 고민하고 있습니다.
+            </p>
+            <p>
+              - 각 언어를 역할에 맞게 사용하려고 연습하고 있습니다. 스타일
+              언어로 해결할 수 있는 것들은 최대한 스타일 언어로 작업하고,
+              스크립트는 되도록 동작과 관련된 것들에 사용하려 노력합니다.
+              스크립트로 작업하면 딱 맞아떨어지게 컨트롤할 수 있는 게 많지만,
+              그만큼 화면 성능을 떨어뜨릴 수 있기 때문에 CSS에서 제공하는
+              기능들을 잘 숙지하고 활용하려고 합니다.
+            </p>
+          </div>
         </div>
       </article>
     </span>
@@ -131,7 +188,7 @@ section.scene2 {
         grid-gap: 1.8rem;
       }
       max-width: 100%;
-      @include setGrid(grid, 4, 1fr, 3, 1.5fr, 1.8rem);
+      @include setGrid(grid, 4, 1fr, 3, 0.5fr, 1.8rem);
       padding: 1.7vh 0;
       font-size: 17px;
       .resume-elem {
@@ -141,15 +198,15 @@ section.scene2 {
         }
       }
       .pic {
-        border-right: 2px solid gold;
-        @include setFlex(flex, center, center);
+        //border-right: 2px solid gold;
+        @include setFlex(flex, center, flex-start);
         min-width: 200px;
         & img {
           width: 240px;
           height: 240px;
           border-radius: 100%;
         }
-        grid-row: 2 / span 2;
+        grid-row: 1 / span 1;
         &.tablet,
         &.mobile {
           grid-column: 1;
@@ -160,7 +217,8 @@ section.scene2 {
         border: none;
         min-width: 100%;
         @include setFlex(flex, center, center);
-       background: rgba(107, 111, 57, 0.11);
+        background: rgba(107, 111, 57, 0.11);
+        border: 3px solid rgba(107, 111, 57, 0.11);
         ul {
           display: flex;
           justify-content: center;
@@ -175,7 +233,9 @@ section.scene2 {
             color: #525329;
           }
         }
-        grid-column: 1 / span 2;
+        grid-column: 3 / span 2;
+        grid-row: 1 / span 1;
+
         &.tablet,
         &.mobile {
           max-height: 200px;
@@ -191,17 +251,19 @@ section.scene2 {
           margin: 10px 0;
           font-size: 16px;
         }
+        //  border-right: 2px solid gold;
         @extend .underLine;
-        grid-row: 2 / span 1;
         &.tablet,
         &.mobile {
           @extend .resGrid;
         }
+        grid-row: 1 / span 1;
       }
 
       .education {
-        border-right: 2px solid gold;
         @extend .underLine;
+        grid-row: 3 / span 1;
+
         ul.inflearn {
           li {
             list-style-type: square;
@@ -209,9 +271,19 @@ section.scene2 {
             font-size: 16px;
           }
         }
+        padding-left: 20px;
+        border-right: 3px solid gold;
+
         &.tablet,
         &.mobile {
           @extend .resGrid;
+          .inflearn {
+            width: 80%;
+            margin: 0 auto;
+          }
+          .inflearn li {
+            list-style: none;
+          }
         }
       }
       .projects {
@@ -219,14 +291,29 @@ section.scene2 {
         li {
           list-style-type: square;
           margin: 10px 0;
+          a {
+            line-height: 1;
+            height: auto;
+          }
         }
+        border-right: 3px solid gold;
+        grid-column: 3 / span 1;
+        padding-left: 20px;
         &.tablet,
         &.mobile {
+          .projectList {
+            width: 80%;
+            margin: 0 auto;
+          }
+          .projectList li {
+            list-style: none;
+          }
           @extend .resGrid;
         }
       }
       .skills {
         @extend .underLine;
+
         &.tablet,
         &.mobile {
           width: 80%;
@@ -236,9 +323,15 @@ section.scene2 {
       }
       .coverletter {
         border: none;
+        background-color: rgba(230, 230, 230, 0.5);
+        background-color: rgba(201, 86, 37, 0.2);
         background-color: rgba(242, 173, 119, 0.13);
+        border: 3px solid #c9562533;
+        //text-align: left;
+        @extend .underLine;
+
         div {
-          @include setFlex(flex, space-evenly, center);
+          @include setFlex(flex, null, center);
           flex-direction: column;
           height: 100%;
           padding: 20px;
@@ -246,18 +339,65 @@ section.scene2 {
           opacity: 0;
           transition: 0.5s;
           h3 {
-           font-family: "NEXON Lv1 Gothic OTF";
-            margin-bottom: 2rem;
-            text-align: center;
-            font-size: 34px;
-            color: #86090e;
+            // font-family: "NEXON Lv1 Gothic OTF";
+            //text-align: center;
+            font-size: 26px;
+            color: #c95625;
+            margin-bottom: 40px;
           }
-          
+        }
+        p {
+          line-height: 1.6;
         }
         @include setGridArea(3, 2, 2, 2);
         &.tablet,
         &.mobile {
           @extend .resGrid;
+        }
+      }
+      .coverletter1 {
+        grid-row: 2 / span 1;
+        grid-column: 1 / span 2;
+      }
+      .keywords {
+        @extend .underLine;
+        &.tablet,
+        &.mobile {
+          @extend .resGrid;
+        }
+      }
+      .contact {
+        grid-column: 3 / span 2;
+        grid-row: 3 / span 3;
+        border: 3px solid rgba(175, 196, 200, 0.3);
+        background-color: rgba(175, 196, 200, 0.3);
+        div {
+          @include setFlex(flex, flex-start, center);
+          flex-direction: column;
+          height: 100%;
+          padding: 20px;
+          /* transform: translateX(100%);
+          opacity: 0;
+          transition: 0.5s; */
+          h3 {
+            font-size: 26px;
+            margin-bottom: 40px;
+            color: #616b6d;
+          }
+          p {
+            line-height: 1.6;
+            margin: 5px 0;
+          }
+        }
+      }
+      .badges {
+        padding: 7px 0;
+        li {
+          display: inline-block;
+          padding: 6px;
+          margin: 3px;
+          border: 1px solid gold;
+          border-radius: 12px;
         }
       }
     }

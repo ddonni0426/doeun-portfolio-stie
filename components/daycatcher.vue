@@ -3,10 +3,18 @@
   <div class="daycatcher-wrap">
     <div class="image-item">
       <picture class="daycatcherImg">
-         <img class="image" src="@/assets/image/daycatcherMains.png" alt="데이캐쳐 메인화면" />
+        <img
+          class="image"
+          src="@/assets/image/flirtingSchool.gif"
+          alt="플러팅스쿨 메인화면"
+        />
       </picture>
       <div class="link-item">
-        <a href="https://github.com/ddonni0426/vue-project" target="_blank">데이캐쳐 소스보러가기</a>
+        <a
+          href="https://github.com/kimdovi-dev/flirting-education-client"
+          target="_blank"
+          >플러팅스쿨 git repository</a
+        >
       </div>
     </div>
   </div>
@@ -29,12 +37,12 @@ export default {};
     max-height: 700px;
     overflow: hidden;
     picture.daycatcherImg {
-        img.image {
-         @extend .carouselImg;
+      img.image {
+        @extend .carouselImg;
       }
     }
     .link-item {
-      @extend .gitLink
+      @extend .gitLink;
     }
   }
 }

@@ -4,26 +4,26 @@
       <ul class="global-nav-links nav-links" :class="$mq">
         <li @click.stop="navi">
           <h2>
-            <a href="#a" class="logo-link" data="a">:-Doeun</a>
+            <a href="#a" class="logo-link selected" data="a">Kim :DoEun</a>
           </h2>
         </li>
-        <li @click.prevent="navi">
-          <a href="#b" class="goTo-scene2 goto" data="b">About Me</a>
+        <li @click.prevent="navi" @click.stop="selectLang">
+          <a href="#b" class="goTo-scene2 goto" data="b">Resume</a>
         </li>
-        <li @click.prevent="navi">
-          <a href="#c" class="goTo-scene3 goto" data="c">Portfolio</a>
+        <li @click.prevent="navi" @click.stop="selectLang">
+          <a href="#c" class="goTo-scene3 goto" data="c">Side Project</a>
         </li>
-        <li @click.prevent="navi">
+        <!--     <li @click.prevent="navi">
           <a href="#d" class="goTo-scene5 goto" data="d">Contact</a>
-        </li>
-        <ul class="lang">
+        </li> -->
+        <!-- <ul class="lang">
           <li @click.stop="selectLang">
             <a href="#a" class="kor selected">KOR</a>
           </li>
           <li @click.stop="selectLang">
             <a href="#a" class="eng">ENG</a>
           </li>
-        </ul>
+        </ul> -->
       </ul>
     </nav>
     <!-- 모바일 메뉴 시작 -->
@@ -43,14 +43,14 @@
     </nav>
     <div class="m_menu_list" :class="$mq">
       <div @click.prevent="navi" data="b">
-        <a href="#a" data="b">About Me</a>
+        <a href="#a" data="b">Resume</a>
       </div>
       <div @click.prevent="navi" data="c">
-        <a href="#b" data="c">Portfolio</a>
+        <a href="#b" data="c">Side Project</a>
       </div>
-      <div @click.prevent="navi" data="d">
+      <!--      <div @click.prevent="navi" data="d">
         <a href="#c" data="d">Contact</a>
-      </div>
+      </div> -->
     </div>
     <Nuxt />
     <div class="arrowTop beforeActive">
@@ -119,14 +119,16 @@ export default {
         currentLang.classList.add("selected");
       }
     },
-    onScroll: throttle(function () {
+    onScroll: throttle(function() {
       const postElem = document.querySelector(".pos");
-      const cvElem = document.querySelector(".coverletter");
+      const cvElem1 = document.querySelector(".coverletter1");
+      const cvElem2 = document.querySelector(".coverletter2");
       const chartElem = document.querySelector(".skillCharts");
       let boundingRect = [];
       boundingRect[0] = postElem.getBoundingClientRect();
-      boundingRect[1] = cvElem.getBoundingClientRect();
+      boundingRect[1] = cvElem1.getBoundingClientRect();
       boundingRect[2] = chartElem.getBoundingClientRect();
+      boundingRect[3] = cvElem2.getBoundingClientRect();
 
       if (this.draw === false) {
         //pos 애니활성
@@ -149,6 +151,13 @@ export default {
           boundingRect[2].top < window.innerHeight * 0.92
         ) {
           this.$renderChart("chart");
+        }
+        //cv2 애니활성
+        if (
+          boundingRect[3].top > window.innerHeight * 0.1 &&
+          boundingRect[3].top < window.innerHeight * 0.92
+        ) {
+          this.$renderChart("cv2");
         }
       }
     }, 500),
@@ -249,6 +258,9 @@ export default {
       & li a.logo-link {
         font-size: 1.5rem;
       }
+      & > li > a.selected {
+        color: #ffb733;
+      }
       & a {
         color: #0f1430;
         font-size: 1rem;
@@ -270,9 +282,6 @@ export default {
         margin-left: auto;
         & > li {
           padding: 0 10px;
-        }
-        & > li > a.selected {
-          color: #ffb733;
         }
       }
     }

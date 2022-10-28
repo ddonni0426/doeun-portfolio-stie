@@ -6,7 +6,7 @@
     "dev": "nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
-    "serve":"nuxt"
+    "serve": "nuxt"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.14.0",

@@ -9,9 +9,9 @@
       <div class="portfolioWrap">
         <portfolio-component></portfolio-component>
       </div>
-      <div class="contactWrap">
+      <!--      <div class="contactWrap">
         <contact-component></contact-component>
-      </div>
+      </div> -->
     </div>
     <footer-component></footer-component>
   </div>
@@ -45,7 +45,7 @@ export default {
       font-size: 2.5rem;
     }
   }
-   position: relative;
+  position: relative;
   section.sub-scene {
     max-width: 1500px;
     overflow: hidden;
